@@ -1,8 +1,8 @@
 
-export default function Header({card, removeFromCart, increaseQuantity, decrementQuantity, cleanCart}) {
 
-    // State derivado
-   const cardTotal = card.reduce((total, item) => total + (item.quantity * item.price), 0 )
+export default function Header({card, removeFromCart, increaseQuantity, decrementQuantity, cleanCart, cardTotal}) {
+
+  
 
 
     return(
